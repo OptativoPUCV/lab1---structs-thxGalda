@@ -210,3 +210,14 @@ Thu 14 Mar 2024 08:58:25 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 870b429
+Thu 14 Mar 2024 09:00:21 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:53:7: error: value computed is not used [-Werror=unused-value]
+   53 |       *newSize++;
+      |       ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+dfe1870
