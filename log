@@ -70,3 +70,18 @@ exercises.c:47:8: error: unused variable ‘newArr’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 9771ac0
+Thu 14 Mar 2024 08:39:33 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:29:7: error: variable ‘temp’ set but not used [-Werror=unused-but-set-variable]
+   29 |   int temp;
+      |       ^~~~
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:47:8: error: unused variable ‘newArr’ [-Werror=unused-variable]
+   47 |   int *newArr = malloc(size * sizeof(int));
+      |        ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e89113e
