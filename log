@@ -115,3 +115,25 @@ Thu 14 Mar 2024 08:51:07 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 070a76b
+Thu 14 Mar 2024 08:56:43 PM UTC: 
+ exercises.c | 23 +++++++++++++++++++++--
+ 1 file changed, 21 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘compare’:
+exercises.c:66:18: error: initialization of ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   66 |   int PtrPivot = (int*) pivot;
+      |                  ^
+exercises.c:67:17: error: initialization of ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   67 |   int PtrElem = (int*) elem;
+      |                 ^
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:75:14: error: ‘j’ undeclared (first use in this function)
+   75 |       result[j] = arr1[i];
+      |              ^
+exercises.c:75:14: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:77:3: error: ‘i’ undeclared (first use in this function)
+   77 |   i = 0;
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+f637619
