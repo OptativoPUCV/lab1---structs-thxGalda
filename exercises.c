@@ -63,8 +63,8 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
 int compare(const void *pivot, const void *elem)
 {
-  int PtrPivot = (int*) pivot;
-  int PtrElem = (int*) elem;
+  int PtrPivot = *(int) pivot;
+  int PtrElem = *(int*) elem;
   return (PtrPivot - PtrElem);
 }
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])

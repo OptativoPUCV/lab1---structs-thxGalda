@@ -175,3 +175,22 @@ exercises.c:76:14: note: each undeclared identifier is reported only once for ea
 cc1: all warnings being treated as errors
 Compilation failed
 f650f67
+Thu 14 Mar 2024 08:57:58 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘compare’:
+exercises.c:66:19: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+   66 |   int PtrPivot = *(int) pivot;
+      |                   ^
+exercises.c:66:18: error: invalid type argument of unary ‘*’ (have ‘int’)
+   66 |   int PtrPivot = *(int) pivot;
+      |                  ^~~~~~~~~~~~
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:76:14: error: ‘j’ undeclared (first use in this function)
+   76 |       result[j] = arr1[i];
+      |              ^
+exercises.c:76:14: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+d9936bb
