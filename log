@@ -250,3 +250,18 @@ Thu 14 Mar 2024 09:06:48 PM UTC:
  tests:  0|3
 total_score: 40/70
 452bbf3
+Thu 14 Mar 2024 09:08:45 PM UTC: 
+ exercises.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:107:34: error: expected ‘;’ before ‘:’ token
+  107 |   else if (descendente) return -1:
+      |                                  ^
+      |                                  ;
+exercises.c:109:1: error: control reaches end of non-void function [-Werror=return-type]
+  109 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+c437945
