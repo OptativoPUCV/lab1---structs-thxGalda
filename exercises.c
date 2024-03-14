@@ -63,7 +63,7 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
 int compare(const void *pivot, const void *elem)
 {
-  int PtrPivot = *(int) pivot;
+  int PtrPivot = *(int*) pivot;
   int PtrElem = *(int*) elem;
   return (PtrPivot - PtrElem);
 }
