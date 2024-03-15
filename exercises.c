@@ -172,5 +172,5 @@ Nodo *crearListaEnlazada(int arr[], int size)
       ultimo = nuevoNodo;
     }
     
-  return NULL; 
+  return nuevoNodo; 
 }

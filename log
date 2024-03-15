@@ -301,3 +301,18 @@ Fri 15 Mar 2024 12:28:54 PM UTC:
  tests:  0|1
 total_score: 60/70
 b8016f5
+Fri 15 Mar 2024 12:29:13 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:175:10: error: ‘nuevoNodo’ undeclared (first use in this function)
+  175 |   return nuevoNodo;
+      |          ^~~~~~~~~
+exercises.c:175:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:176:1: error: control reaches end of non-void function [-Werror=return-type]
+  176 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+7d0528d
