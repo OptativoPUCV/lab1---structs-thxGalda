@@ -171,7 +171,8 @@ Nodo *crearListaEnlazada(int arr[], int size)
   
   for (int i = 0; i < size; i++)
     {
-      temp = creaNodo(arr[i]);
+      temp = crearNodo(arr[i]);
+      
       if (cabeza == NULL)
         cabeza = temp;
       else 
