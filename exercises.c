@@ -173,12 +173,10 @@ Nodo *crearListaEnlazada(int arr[], int size)
     {
       temp = crearNodo(arr[i]);
       
-      if (cabeza == NULL)
-        cabeza = temp;
-      else 
-        ultimo->siguiente = temp;
+      if (cabeza == NULL) cabeza = temp;
+      else ultimo->siguiente = temp;
       ultimo = temp;
     }
     
-  return temp; 
+  return cabeza; 
 }
