@@ -158,7 +158,7 @@ Nodo *crearListaEnlazada(int arr[], int size)
 { 
   Nodo *cabeza = NULL;
   Nodo *ultimo = NULL;
-  Nodo *nuevoNodo;
+  Nodo *nuevoNodo = NULL;
 
   
   for (int i = 0; i < size; i++)

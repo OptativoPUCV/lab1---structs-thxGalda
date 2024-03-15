@@ -327,3 +327,9 @@ exercises.c:176:10: error: ‘nuevoNodo’ is used uninitialized [-Werror=uninit
 cc1: all warnings being treated as errors
 Compilation failed
 0f4efd2
+Fri 15 Mar 2024 12:31:07 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|1
+total_score: 60/70
+90fe2f7
