@@ -339,3 +339,18 @@ Fri 15 Mar 2024 12:40:56 PM UTC:
  tests:  0|1
 total_score: 60/70
 089b470
+Fri 15 Mar 2024 12:44:24 PM UTC: 
+ exercises.c | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:174:14: error: implicit declaration of function ‘creaNodo’; did you mean ‘crearNodo’? [-Werror=implicit-function-declaration]
+  174 |       temp = creaNodo(arr[i]);
+      |              ^~~~~~~~
+      |              crearNodo
+exercises.c:174:12: error: assignment to ‘Nodo *’ {aka ‘struct nodo *’} from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  174 |       temp = creaNodo(arr[i]);
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+286c46f
