@@ -316,3 +316,14 @@ exercises.c:176:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 7d0528d
+Fri 15 Mar 2024 12:29:55 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+test.c: In function ‘crearListaEnlazada’:
+exercises.c:176:10: error: ‘nuevoNodo’ is used uninitialized [-Werror=uninitialized]
+  176 |   return nuevoNodo;
+      |          ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+0f4efd2
